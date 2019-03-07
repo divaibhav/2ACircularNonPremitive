@@ -1,6 +1,6 @@
 package node;
 
 public class MarksNode {
-    int data;
-    MarksNode next;
+   public  int data;
+   public MarksNode next;
 }

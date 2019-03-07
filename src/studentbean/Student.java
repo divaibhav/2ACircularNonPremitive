@@ -4,10 +4,10 @@ import linkedlist.MyLinkedListMarks;
 
 public class Student {
 
-    int rollno;
-    int rank;
-    String name;
-    MyLinkedListMarks markslist;
+    public int rollno;
+    public int rank;
+    public String name;
+    public MyLinkedListMarks markslist;
 
     @Override
     public String toString() {
@@ -15,7 +15,7 @@ public class Student {
                 "rollno=" + rollno +
                 ", rank=" + rank +
                 ", name='" + name + '\'' +
-                ", markslist=" + markslist +
+                ", markslist=" + markslist.display() +
                 '}';
     }
 }

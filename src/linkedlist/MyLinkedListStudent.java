@@ -5,7 +5,7 @@ import node.StudentNode;
 public class MyLinkedListStudent {
     StudentNode head;
     //insert
-    void insert(StudentNode node){
+    public void insert(StudentNode node){
         if(head==null){
             head=node;
             node.next=head;
@@ -19,13 +19,15 @@ public class MyLinkedListStudent {
             node.next=head;
             node.previous=temp;
             temp.next=node;
+            head.previous=node;
+
         }
     }
 
 
 
     // dusplay
-    void display(){
+    public void display(){
         System.out.println("MyLinkedList:");
         StudentNode temp=head;
         while(temp.next!=head){
